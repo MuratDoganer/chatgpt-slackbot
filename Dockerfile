@@ -12,4 +12,4 @@ COPY ./ /usr/src/app/
 RUN npm i
 RUN npm run build
 
-CMD npm run start
+CMD npm run start -- --hostname 0.0.0.0 --port 8080
